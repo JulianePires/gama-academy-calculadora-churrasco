@@ -3,9 +3,13 @@ const botao = document.querySelector("#botaoCalcular")
 const calcularChurrasco = () => {
 
     // Coleta valor dos inputs
-    const mulheres = document.getElementById('mulheres-qnt').value;
-    const homens = document.getElementById('homens-qnt').value;
-    const criancas = document.getElementById('criancas-qnt').value;
+    const mulheresC = document.getElementById('mulheresC-qnt').value;
+    const homensC = document.getElementById('homensC-qnt').value;
+    const criancasC = document.getElementById('criancasC-qnt').value;
+
+    const mulheresV = document.getElementById('mulheresV-qnt').value;
+    const homensV = document.getElementById('homensV-qnt').value;
+    const criancasV = document.getElementById('criancasV-qnt').value;
 
     const acompanhamentos = document.getElementById('acompanhamentos').value;
     const bebidasAlcoolicas = document.getElementById('bebidas-alcoolicas').value;
@@ -13,10 +17,13 @@ const calcularChurrasco = () => {
 
 
     // Logica de valores por grama e multiplicacao da quantidade de pessoas
-    let totalCarne = mulheres * 150 + homens * 200 + criancas * 100
+    let totalCarne = mulheresC * 150 + homensC * 200 + criancasC * 100
+
+    // Logica de valores por grama e multiplicação da quantidade de pessoas    
+    let totalVegan = mulheresV * 150 + homensV * 200 + criancasV * 100
 
     // Soma da quantidade de pessoas
-    const totalPessoas = Number(mulheres) + Number(homens) + Number(criancas)
+    const totalPessoas = Number(mulheresC) + Number(homensC) + Number(criancasC) + Number(mulheresV) + Number(homensV) + Number(criancasV)
     
     // 50g de acompanhamento por pessoa
     const totalAcompanhamento = acompanhamentos ? 50 * Number(totalPessoas) : 0
@@ -29,7 +36,8 @@ const calcularChurrasco = () => {
 
     
 
-    document.getElementById("total-carne").innerHTML = `${getValueMeasure(totalCarne, 1)}`
+    document.getElementById("total-carnes").innerHTML = `${getValueMeasure(totalCarne, 1)}`
+    document.getElementById("total-vegan").innerHTML = `${getValueMeasure(totalVegan, 1)}`
     document.getElementById("total-pessoas").innerHTML = `${totalPessoas} pessoas`
     document.getElementById("total-acompanhamento").innerHTML = `${getValueMeasure(totalAcompanhamento, 1)}`
     document.getElementById("total-bebidas-nao-alcoolicas").innerHTML = `${getValueMeasure(totalBebidasNaoAlcoolicas, 2)}`
