@@ -24,96 +24,113 @@
       <!--FUNDO ROXO-->
       <div class="container corpo">
 
-        <!--CABEÇALHO-->
-        <header class="header">
-          <!--LOGO GAMA--><img src="logo.png" class="logoGama img-fluid">
-          <!--TITLE 1--><h2 class="title1">Calculadora de Churrasco</h2>
-        </header>
+      <!--CABEÇALHO-->
+      <header class="header">
+        <!--LOGO GAMA--><img src="logo.png" class="logoGama img-fluid">
+        <!--TITLE 1--><h2 class="title1">Calculadora de Churrasco</h2>
+      </header>
 
-        <h3 class="titles">Comidas</h3>
+      <h3 class="titles">Comidas</h3>
 
-          <!--CARNES-->
-          <div class="container-fluid">
-            <h3 class="itens">Carnes</h3>
-          </div>
-          <br>
-          <div class="container-fluid inputsrow">
-            <span class="enter">
-              <input class="inputs" id="mulheresC-qnt" type="text" />
-              <label class="labels" for="mulheresC-qnt">Mulheres</label>
-            </span>
-            <span class="enter">
-              <input class="inputs" id="homensC-qnt" type="text" />
-              <label class="labels" for="homensC-qnt">Homens</label>
-            </span>
-            <span class="enter">
-              <input class="inputs" id="criancasC-qnt" type="text" />
-              <label class="labels" for="criancasC-qnt">Crianças</label>
-            </span>   
-          </div>
-
-          <!--VEGAN-->
-          <div class="container-fluid">
-            <h3 class="itens">Vegan</h3>
-          </div>
-          <br>
-          <div class="container-fluid inputsrow">
-            <span class="enter">
-              <input class="inputs" id="mulheresV-qnt" type="text" />
-              <label class="labels" for="mulheresV-qnt">Mulheres</label>
-            </span>
-            <span class="enter">
-              <input class="inputs" id="homensV-qnt" type="text" />
-              <label class="labels" for="homensV-qnt">Homens</label>
-            </span>
-            <span class="enter">
-              <input class="inputs" id="criancasV-qnt" type="text" />
-              <label class="labels" for="criancasV-qnt">Crianças</label>
-            </span>   
-          </div>
-          <br>
-          <label for="acompanhamentos" class="labels">Acompanhamentos</label>
-          <input id="acompanhamentos" class="custom-control-inline" type="checkbox" />
-          <br><br>
-          <h3 class="titles">Bebidas</h3>
-          <div class="container-fluid inputsrow">
-            <span class="enter">
-              <input class="inputs" id="bebidas-nao-alcoolicas" type="text" />
-              <label class="labels" for="bebidas-nao-alcoolicas">Não alcoolicas</label>
-            </span>
-            <span class="enter">
-              <input class="inputs" id="bebidas-alcoolicas" type="text" />
-              <label class="labels" for="bebidas-alcoolicas">Alcoolicas</label>
-            </span>
-          </div>
-          <br>
-        <br>
-        <button id="botaoCalcular" class="botao">Calcular</button>
-
-          <div>
-            <div>
-              <label class="labels" for="total-carne" id="total-carne"></label>
-            </div>
-            <div>
-              <label class="labels" for="total-vegan" id="total-vegan"></label>
-            </div>
-            <div>
-              <label class="labels" for="total-pessoas" id="total-pessoas"></label>
-            </div>
-            <div>
-              <label class="labels" for="total-acompanhamento" id="total-acompanhamento"></label>
-            </div>
-            <div>
-              <label class="labels" for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
-            </div>
-            <div>
-              <label class="labels" for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
-            </div>
-            <div>
-          </div>
-        </div>
-        <script src="./src/main.js"></script>
+      <!--CARNES-->
+      <div class="container-fluid">
+        <h3 class="itens">Carnes</h3>
       </div>
+      
+      <br>
+          
+      <div class="container-fluid inputsrow">
+      
+        <span class="enter">
+          <input class="inputs" id="mulheresC-qnt" type="text" />
+          <label class="labels" for="mulheresC-qnt">Mulheres</label>
+        </span>
+            
+        <span class="enter">
+          <input class="inputs" id="homensC-qnt" type="text" />
+          <label class="labels" for="homensC-qnt">Homens</label>
+        </span>
+            
+        <span class="enter">
+          <input class="inputs" id="criancasC-qnt" type="text" />
+          <label class="labels" for="criancasC-qnt">Crianças</label>
+        </span>   
+      
+      </div>
+
+      <!--VEGAN-->
+      <div class="container-fluid">
+        <h3 class="itens">Vegan</h3>
+      </div>
+      
+      <br>
+      
+      <div class="container-fluid inputsrow">
+        
+        <span class="enter">
+          <input class="inputs" id="mulheresV-qnt" type="text" />
+          <label class="labels" for="mulheresV-qnt">Mulheres</label>
+        </span>
+        
+        <span class="enter">
+          <input class="inputs" id="homensV-qnt" type="text" />
+          <label class="labels" for="homensV-qnt">Homens</label>
+        </span>
+        
+        <span class="enter">
+          <input class="inputs" id="criancasV-qnt" type="text" />
+          <label class="labels" for="criancasV-qnt">Crianças</label>
+        </span>   
+     
+      </div>
+          
+      <br>
+          
+      <label for="acompanhamentos" class="labels">Acompanhamentos</label>  
+      <input id="acompanhamentos" class="custom-control-inline" type="checkbox" />
+      
+      <br><br>
+      
+      <h3 class="titles">Bebidas</h3>
+      
+      <div class="container-fluid inputsrow">
+        <span class="enter">
+          <input class="inputs" id="bebidas-nao-alcoolicas" type="text" />
+          <label class="labels" for="bebidas-nao-alcoolicas">Não alcoolicas</label>
+        </span>
+        
+        <span class="enter">
+          <input class="inputs" id="bebidas-alcoolicas" type="text" />
+          <label class="labels" for="bebidas-alcoolicas">Alcoolicas</label>
+        </span>
+      
+      </div>
+      
+      <br><br>
+      
+      <button id="botaoCalcular" class="botao">Calcular</button>
+
+      <div>
+        <div>
+          <label class="labels" for="total-carne" id="total-carne"></label>
+        </div>
+        <div>
+          <label class="labels" for="total-vegan" id="total-vegan"></label>
+        </div>
+        <div>
+          <label class="labels" for="total-pessoas" id="total-pessoas"></label>
+        </div>
+        <div>
+          <label class="labels" for="total-acompanhamento" id="total-acompanhamento"></label>
+        </div>
+        <div>
+          <label class="labels" for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+        </div>
+        <div>
+          <label class="labels" for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
